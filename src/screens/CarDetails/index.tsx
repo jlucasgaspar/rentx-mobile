@@ -5,12 +5,13 @@ import { StatusBar, StyleSheet } from 'react-native';
 
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
-// import { Accessory } from '../../components/Accessory';
-// import { Button } from '../../components/Button';
+import { Accessory } from '../../components/Accessory';
+import { Button } from '../../components/Button';
 
 // import { getAccessoryIcon } from '../../utils/getAccessoryIcon';
 // import { CarDTO } from '../../dtos/CarDTO';
 // import { Car as CarModel} from '../../database/model/Car';
+import SpeedSvg from '../../assets/speed.svg';
 
 import {
   Container,
@@ -64,10 +65,30 @@ export function CarDetails(){
           </Rent>
         </Details>
 
+        <Accessories>
+          <Accessory name="380 km/h" icon={SpeedSvg} />
+          <Accessory name="speed" icon={SpeedSvg} />
+          <Accessory name="speed" icon={SpeedSvg} />
+          <Accessory name="speed" icon={SpeedSvg} />
+          <Accessory name="speed" icon={SpeedSvg} />
+          <Accessory name="speed" icon={SpeedSvg} />
+        </Accessories>
+
         <About>
+          Lorem ipsum qualquer
+          Lorem ipsum qualquer
+          Lorem ipsum qualquer
+          Lorem ipsum qualquer
+          Lorem ipsum qualquer
+          Lorem ipsum qualquer
+          Lorem ipsum qualquer
           Lorem ipsum qualquer
         </About>
       </Content>
+
+      <Footer>
+        <Button title="Confirmar" />
+      </Footer>
     </Container>
   );
 }
