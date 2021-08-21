@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
 import { Home } from './src/screens/Home';
 import { CarDetails } from './src/screens/CarDetails';
+import { Scheduling } from './src/screens/Scheduling';
 
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
@@ -17,7 +18,8 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       {/* <Home /> */}
-      <CarDetails />
+      {/* <CarDetails /> */}
+      <Scheduling />
     </ThemeProvider>
   );
 }
