@@ -1,19 +1,10 @@
 import React from 'react';
 import { useWindowDimensions, StatusBar } from 'react-native';
 // import { useNavigation, useRoute } from '@react-navigation/native';
-
 import LogoSvg from '../../assets/logo_background_gray.svg';
 import DoneSvg from '../../assets/done.svg';
-
 import { ConfirmButton } from '../../components/ConfirmButton';
-
-import {
-  Container,
-  Content,
-  Title,
-  Message,
-  Footer,
-} from './styles';
+import { Container, Content, Title, Message, Footer } from './styles';
 
 interface Params {
   title: string;
